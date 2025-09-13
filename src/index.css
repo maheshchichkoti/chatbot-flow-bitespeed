@@ -1,0 +1,60 @@
+@import "tailwindcss";
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+}
+.app {
+  display: flex;
+  height: 100vh;
+}
+.left-panel {
+  width: 220px;
+  border-right: 1px solid #e6e6e6;
+  padding: 12px;
+}
+.canvas {
+  flex: 1;
+  position: relative;
+}
+.right-panel {
+  width: 320px;
+  border-left: 1px solid #e6e6e6;
+  padding: 12px;
+}
+.node-card {
+  background: #e9fffb;
+  border-radius: 8px;
+  padding: 10px 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  min-width: 200px;
+}
+.draggable {
+  padding: 12px;
+  border-radius: 8px;
+  background: white;
+  border: 1px dashed #bfc9d9;
+  cursor: grab;
+  text-align: center;
+}
+.save-btn {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+}
+.toast {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #ffdede;
+  color: #7a1b1b;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
